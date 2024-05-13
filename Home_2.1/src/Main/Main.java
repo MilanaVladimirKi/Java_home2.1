@@ -7,9 +7,15 @@ public class Main {
 
         int mills = 20;
 
+        int bonus = 0;
+
+        if (price >= mills) {
+            bonus = price / mills;
+        }
+
         System.out.println("bonus");
 
-        System.out.println(price / mills);
+        System.out.println(bonus);
 
     }
 
