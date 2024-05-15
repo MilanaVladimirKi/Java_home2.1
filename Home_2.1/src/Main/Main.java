@@ -4,18 +4,14 @@ public class Main {
     public static void main(String[] args){
 
         int price = 13676;
+        int bonus;
 
-        int mills = 20;
-
-        int bonus = 0;
-
-        if (price >= mills) {
-            bonus = price / mills;
+        if (price >= 20) {
+            bonus = price / 20;
+        } else {
+            bonus = 0;
         }
-
-        System.out.println("bonus");
-
-        System.out.println(bonus);
+        System.out.println("колличество бонусных миль " + bonus);
 
     }
 
